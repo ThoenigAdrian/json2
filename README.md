@@ -14,5 +14,5 @@ Python package which just wraps the default python json but with.
 import json2
 
 a = json2.load_file(r'/home/user/myjson.json')
-json2.save_file(a, r'/home/user/myjson.json')
+json2.save_file(r'/home/user/myjson.json', a)
 ```
