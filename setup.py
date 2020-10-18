@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="json2",
-    version="0.3.0",
+    version="0.4.0",
     author="Adrian Thoenig",
     description="Add convenience function to pythons default json implementation",
     long_description=long_description,
