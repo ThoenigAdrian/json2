@@ -1,4 +1,4 @@
-# Logfast
+# Json2
 
 ## Purpose
 Python package which just wraps the default python json but with.
