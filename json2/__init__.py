@@ -1,11 +1,11 @@
 from json import *
 
-def read_file(filename):
+def load_file(filename):
     with open(filename, "r") as f:
-        return json.loads(f.read())
+        return loads(f.read())
 
 
-def write_file(filename, content):
+def dump_file(filename, content):
     with open(filename, "w") as f:
         f.write(json.dumps(content))
 
@@ -22,3 +22,4 @@ class MLFrienldyEncoder(json.JSONEncoder):
                 obj = obj.detach().cpu().numpy()  # Convert PyTorch tensor to NumPy array
             return obj.tolist()  # Convert NumPy array to Python list
         return super(MLFrienldyEncoder, self).default(obj)
+
