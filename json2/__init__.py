@@ -10,7 +10,7 @@ def dump_file(filename, content):
         f.write(json.dumps(content))
 
 
-class MLFrienldyEncoder(json.JSONEncoder):
+class MLFrienldyEncoder(JSONEncoder):
     """
         A custom JSON encoder that can handle NumPy arrays and PyTorch tensors.
     """
