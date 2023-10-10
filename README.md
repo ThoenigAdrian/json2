@@ -2,6 +2,7 @@
 
 ## Purpose
 Python package which just wraps the default python json but with.
+Additonally it can hanlde numpy arrays and torch tensors without throwing an exception.
 ```json2.load_file``` and ```json2.save_file```
 
 ## Installation
