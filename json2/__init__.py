@@ -1,7 +1,7 @@
 from json import *
 
-def load_file(filename):
-    with open(filename, "r") as f:
+def load_file(filename, encoding="utf8"):
+    with open(filename, "r", encoding="utf8") as f:
         return loads(f.read())
 
 
