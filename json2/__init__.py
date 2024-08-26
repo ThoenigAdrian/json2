@@ -7,7 +7,7 @@ def load_file(filename):
 
 def dump_file(filename, content):
     with open(filename, "w") as f:
-        f.write(json.dumps(content))
+        f.write(dumps(content))
 
 
 class MLFrienldyEncoder(JSONEncoder):
